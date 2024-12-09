@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <!-- Contenedor de links de navegación -->
+            <div class="navegacion">
+                <div id="nombre">
+                    <div>Florencia <br> Benitez <br> Garcia</div>
+                </div>
+
+                <div id="symbol">
+                    <div>GSLSG</div>
+                </div>
+
+                <div class="barra">
+                    <a href="index.html" class="html">
+                        <h1>Home</h1>
+                    </a>
+
+                    <a href="fotos.html" class="html">
+                        <h1>Fotos</h1>
+                    </a>
+
+                    <a href="proyectos.html" class="html">
+                        <h1>Proyectos</h1>
+                    </a>
+
+                    <a href="videos.html" class="html">
+                        <h1>Videos</h1>
+                    </a>
+
+                    <a href="cv.html" class="html">
+                        <h1>CV</h1>
+                    </a>
+
+                    <a href="contacto.html" class="html">
+                        <h1>Contacto</h1>
+                    </a>
+                </div>
+
+                <div id="symbol">
+                    <div>GSLSG</div>
+                </div>
+            </div>
+
+            <!-- Contenedor de datos -->
+            <div class="datos">
+
+                <div class="representacion">
+                    <h2>Florencia Benitez García está representada por la Universidad
+                        ORT.</h2>
+                </div>
+
+                <div class="direccion">
+                    <h3>Universidad ORT — Campus Centro:</h3>
+                    <p>
+                        Cuareim 1451<br>
+                        11100 Montevideo<br>
+                        Departamento de Montevideo, Uruguay<br>
+                        T: +598 2902 1505<br>
+                        <a href="https://fd.ort.edu.uy" target="_blank">fd.ort.edu.uy</a>
+                    </p>
+                </div>
+
+                <div class="contacto">
+                    <h3>Para ponerse en contacto directamente con Florencia:</h3>
+                    <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=flor9nicole@gmail.com&su=Hola&body=Mensaje"
+                            target="_blank">flor9nicole@gmail.com</a></p>
+                </div>
+
+                <div class="formulario">
+                    <form action="https://formspree.io/f/xvgonzze" method="POST">
+
+                        <!--Presentación-->
+                        <h3>¿Te gustaría trabajar conmigo?</h3>
+                        <p>Completa el formulario a continuación con algunos detalles sobre ti y tu proyecto. Me pondré
+                            en
+                            contacto contigo lo antes posible. Por favor, ten en cuenta que podría tardar un par de días
+                            en
+                            responder.
+                        </p>
+
+                        <!--Texto-->
+                        <h3><label for="nomcomp">Nombre:</label></h3>
+                        <input type="text" id="nomcomp" name="nomcomp" value="Florencia">
+                        <br>
+                        <h3><label for="apecomp">Apellido:</label></h3>
+                        <input type="text" id="apecomp" name="apecomp" value="Benitez">
+                        <br>
+
+                        <!--Teléfono-->
+                        <h3><label for="cel">Celular:</label></h3>
+                        <input type="tel" id="cel" name="cel" placeholder="+598 9000 0000"
+                            pattern="(\+598)\s?\d{4}\s?\d{4}" required>
+                        <br>
+
+                        <!--Email-->
+                        <h3><label for="email">Email:</label></h3>
+                        <input type="email" id="email" name="email" value="flor9nicole@gmail.com">
+                        <br>
+
+                        <!--Color picker-->
+                        <h3><label for="favcolor">Color favorito:</label></h3>
+                        <input type="color" id="favcolor" name="favcolor" value="#ff748B">
+                        <br>
+
+                        <!--Archivo-->
+                        <h3><label for="archivo">Archivo:</label></h3>
+                        <input type="file" id="archivo" name="archivo">
+                        <br>
+
+                        <!--Text área-->
+                        <h3><label for="textarea">Mensaje:</label></h3>
+                        <textarea id="textarea" name="textarea" rows="5"
+                            cols="50">Por favor, cuéntame un poco sobre ti y tu proyecto :)</textarea>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <p>Haz clic en el botón "Enviar" y los datos del formulario se enviarán a mi email.
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

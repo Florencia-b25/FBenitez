@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh; /* Hace que el fondo cubra toda la altura del viewport */
+    display: flex;
+    background-image: url("./imag/fondo.jpg");
+    background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 65%;
+    flex-direction: row;
+    max-width: 1000px;
+}
+
+.navegacion {
+    position: fixed;
+    top: 130px;
+}
+
+@font-face {
+    font-family: 'starrynight'; /* Nombre que usaremos en CSS */
+    src: url('fonts/starrynight.otf') format('truetype');
+}
+
+#nombre {
+    color: black;
+    font-family: 'starrynight';
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center; /* Centra el texto horizontalmente */
+} 
+
+@font-face {
+    font-family: 'MF'; /* Nombre que usaremos en CSS */
+    src: url('fonts/MF\ Dings.ttf') format('truetype');
+}
+
+#symbol {
+    color: black;
+    font-family: 'MF';
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 9px;
+}   
+
+/* Estilo para la barra que usa Flexbox para centrar */
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 5px; /* Agrega un espacio entre los enlaces */
+}
+
+/* Estilo para los enlaces dentro de la barra */
+.barra a {
+    text-decoration: none; /* Elimina el subrayado azul */
+    color: inherit; /* Hereda el color del texto definido para el párrafo */
+}
+
+/* Estilo de los párrafos dentro de la barra */
+.barra p {
+    margin: 2px 0; /* Aumenta la separación entre los elementos */
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-family: 'Trebuchet MS';
+    font-weight: bold; /* Esto pone el texto en negrita */
+    font-size: small;
+}

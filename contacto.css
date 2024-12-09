@@ -1,0 +1,199 @@
+body {
+    height: 100vh; /* Hace que el fondo cubra toda la altura del viewport */
+    background-color: rgb(255, 232, 236);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 65%;
+    flex-direction: row;
+    max-width: 1000px;
+}
+
+.navegacion {
+    position: fixed;
+    top: 130px;
+}
+
+@font-face {
+    font-family: 'starrynight'; /* Nombre que usaremos en CSS */
+    src: url('fonts/starrynight.otf') format('truetype');
+}
+
+#nombre {
+    color: black;
+    font-family: 'starrynight';
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center; /* Centra el texto horizontalmente */
+} 
+
+@font-face {
+    font-family: 'MF'; /* Nombre que usaremos en CSS */
+    src: url('fonts/MF\ Dings.ttf') format('truetype');
+}
+
+#symbol {
+    color: black;
+    font-family: 'MF';
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 9px;
+}   
+
+/* Estilo para la barra que usa Flexbox para centrar */
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 5px; /* Agrega un espacio entre los enlaces */
+}
+
+/* Estilo para los enlaces dentro de la barra */
+.barra a {
+    text-decoration: none; /* Elimina el subrayado azul */
+    color: inherit; /* Hereda el color del texto definido para el párrafo */
+}
+
+/* Estilo de los párrafos dentro de la barra */
+.barra h1 {
+    margin: 2px 0; /* Aumenta la separación entre los elementos */
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-family: 'Trebuchet MS';
+    font-weight: bold; /* Esto pone el texto en negrita */
+    font-size: small;
+}
+
+/* Contenedor de datos */
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea todos los elementos hijos a la izquierda */
+    width: 100%;
+    gap: 10px; /* Espacio entre los elementos directos del contenedor */
+    margin-top: 115px;
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho total */
+    padding-left: 250px;
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-family: 'Trebuchet MS';
+}
+
+/* Estilo para cada sección */
+.representacion,
+.direccion,
+.contacto {
+    margin-bottom: 32px; /* Espacio entre estas secciones */
+}
+
+h2 {
+    text-align: left; /* Asegura que el texto introductorio también esté alineado a la izquierda */
+    font-size: 16px;
+    line-height: 2.5;
+    margin: 0;
+    font-weight: bold; /* Esto pone el texto en negrita */
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left; /* Asegura que los títulos estén alineados a la izquierda */
+    margin-bottom: 5px; /* Espacio después del título */
+}
+
+p {
+    font-size: 13px;
+    line-height: 1.3;
+    text-align: left; /* Asegura que los párrafos estén alineados a la izquierda */
+}
+
+/* Estilo general del enlace */
+a {
+    color: rgb(0, 0, 0); /* Color del enlace */
+    text-decoration: none; /* Quita el subrayado por defecto */
+}
+
+.formulario {
+    margin-bottom: 120px;
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-family: 'Trebuchet MS';
+}
+
+/* Estilo general para todos los inputs */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="file"],
+textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 350px; /* Máximo ancho */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Separación entre elementos */
+    font-size: 13px; /* Tamaño de fuente */
+    line-height: 1.3;
+    border: 1px solid rgb(255, 116, 139); /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-family: 'Trebuchet MS';
+    margin-bottom: 20px; /* Espacio */
+
+}
+
+/* Estilo para el color picker*/
+input[type="color"] {
+    resize: none; /* Desactiva el ajuste manual */
+    height: 40px; /* Altura fija */
+    width: 94px;
+    margin: 10px 0; /* Separación entre elementos */
+}
+
+/* Agregar separación entre el color picker y el siguiente h3 */
+input[type="color"] {
+    margin-bottom: 20px; /* Igualar el margen inferior con el de los inputs */
+}
+
+/* Estilo para el h3 del campo "Archivo" */
+h3 {
+    margin-top: 20px; /* Separación desde el color picker */
+}
+
+/* Estilo para el h3 del campo "Archivo" */
+h3#archivo {
+    margin-top: 20px; /* Igualar la separación al de otros campos */
+}
+
+/* Estilo para el textarea */
+textarea {
+    resize: none; /* Desactiva el ajuste manual */
+    height: 150px; /* Altura fija */
+    margin: 10px 0; /* Separación entre elementos */
+}
+
+/* Botón de envío */
+input[type="submit"] {
+    background-color: rgb(255, 116, 139);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: bold;
+    margin: 10px 0; /* Separación entre elementos */
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 116, 139);
+}
+
+/* Estilo para el párrafo */
+form p {
+    margin-bottom: 35px; /* Igualar margen con las casillas de entrada */
+}
